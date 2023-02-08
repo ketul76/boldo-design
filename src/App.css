@@ -1,38 +1,674 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:hover{
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Header Css Start */
+  header{
+    background: #0A2640;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 75px;
+    align-items: center;
   }
-}
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+  .logo h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.25px;
+    color: #FFFFFF;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  li{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  nav button{
+    padding: 8px 40px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+  }
+  nav button:hover{
+    background: #0A2640;
+    color: #FFFFFF;
+  }
+  .bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+/* Header Css End */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Css Start */
+.home{
+  background: #0A2640;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 155px;
+  padding: 35px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.home-text h3{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: 1;
 }
+.home-text p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F1F1F1;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.home-btns{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.home-btns button{
+  padding: 16px 56px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: transparent;
+  border-radius: 56px;
+  border: 2px solid #FFFFFF;
+}
+.home-btns button:hover{
+  background: #65E4A3;
+  border: 2px solid #69E6A6;
+  color: #0A2640;
+}
+.home-img{
+  position: relative;
+  z-index: 1;
+}
+.home-list{
+  background: #0A2640;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  overflow: hidden;
+}
+/* Home Css End */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Service Css Start */
+  .services{
+    padding: 55px 0;
   }
-  to {
-    transform: rotate(360deg);
+  .services h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  .services h2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 48px;
+  }
+  .our-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+  .our-service h3{
+    padding-top: 32px;
+    padding-bottom: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .our-service p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+    padding-bottom: 28px;
+  }
+  .service-img{
+    height: 280px;
+  }
+  .explore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .explore h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    color: #0A2640;
+  }
+  .line{
+    width: 120px;
+    height: 1px;
+    background: #0A2640;
+  }
+/* Service Css End */
+
+
+/* Connect Css Start */
+  .connect{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+  }
+  .connect-text h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
+  .connect-list{
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+  .connect-list h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .connect-text button{
+    padding: 16px 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #0A2640;
+    border: 2px solid #0A2640;
+    border-radius: 56px;
+  }
+  .connect-text button:hover{
+    background: #000000;
+  }
+/* Connect Css End */
+.connect-one-main{
+  height: 600px;
+}
+
+/* Customer Css Start */
+.customer{
+  background: #0A2640;
+  padding: 75px 0;
+}
+.customer-header{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: flex-end;
+}
+.customer-header h3{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.cus-header-img{
+  display: flex;
+  gap: 28px;
+}
+.customer-card{
+  width: 350px;
+  height: 322px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 40px 40px 0 40px;
+  transition: 0.5s;
+}
+.customers-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  gap: 20px;
+}
+.customer-card h2{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+.customer-profile{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 40px;
+}
+.customer-card:hover{
+  height: 370px;
+  cursor: pointer;
+}
+
+/* Customer Css End */
+
+
+/* Connect Customer Css Start */
+  .connected-customer-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .line1{
+    width: 500px;
+    height: 1px;
+    background: #C4C4C4;
+  }
+  .connected-customer-text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 50px 0;
+  }
+  .connected-customer-text h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+  }
+  .more{
+   padding: 16px 0;
+  }
+  .connected-customer-text h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+/* Connect Customer Css End */
+
+/* Blog Css Start */
+  .our-blog{
+    padding: 50px 0;
+  }
+  .our-blog h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+  .our-blog h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 25px;
+  }
+  .blog h3{
+    padding: 12px 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0A2640;
+  }
+  .blog span{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #777777;
+    padding-left: 10px;
+  }
+  .blog p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 20px;
+  }
+  .blog-writer{
+    display: flex;
+   align-items: center;
+   gap: 12px;
+  }
+  .blog-writer h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+  }
+  .load-more-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .our-blog button{
+    padding: 16px 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0A2640;
+    border: 2px solid #0A2640;
+    border-radius: 56px;
+  }
+  .our-blog button:hover{
+    background-color: #000000;
+    color: #F1F1F1;
+  }
+/* Blog Css End */
+
+/* Contact-us Css Start */
+  .contact-us{
+    height: 390px;
+    background: #0A2640;
+    border-radius: 12px;
+    margin: 55px;
+  }
+  .contact-us h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 70px 0;
+  }
+  .contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .contact-form input{
+    width: 370px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 240px;
+    padding: 12px 0 12px 32px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  input:focus{
+    outline: none;
+  }
+  ::placeholder{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .contact-form button{
+    padding: 16px 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0A2640;
+    background: #65E4A3;
+    border: 2px solid #65E4A3;
+    border-radius: 56px;
+  }
+  .contact-form button:hover{
+    background: #F1F1F1;
+  }
+/* Contact-us Css End */
+
+/* Footer css Start */
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    gap: 105px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-lists{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 95px;
+  }
+  .footer-logo{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .footer-logo h2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.25px;
+    color: #0A2640;
+  }
+  .footer-title p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+    padding-bottom: 60px;
+  }
+  .footer-title h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+  }
+  .footer-lists h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 32px;
+  }
+  .footer-lists p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    padding: 10px 0;
+  }
+  .footer-lists button{
+    padding: 1px 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 28px;
+    color: #0A2640;
+    background: #65E4A3;
+    border-radius: 120px;
+    border: none;
+  }
+/* Footer Css End */
+
+
+
+
+
+
+
+/* Media Query Start */
+
+/* 992px */
+
+@media screen and (max-width: 992px) {
+  .home{
+    gap: 25px;
+    padding: 7px;
+  }
+  .bg{
+    display: none;
+  }
+  .home-img img{
+    width:100%;
+  }
+  .home-list{
+    padding: 25px;
+  }
+  .home-list img{
+    width: 100%;
+  }
+  nav li{
+    display: none;
+  }
+  header{
+    padding: 15px;
+  }
+  .customer{
+    padding: 15px;
+  }
+  .customer-header{
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+  }
+  .contact-us{
+    margin: 15px;
+    padding: 15px;
+    height: 100%;
+  }
+}
+
+
+
+/* 340px */
+@media screen and (max-width: 340px) {
+  nav button{
+    display: none;
+  }
+  .customer-card{
+    height: 100%;
+    padding: 25px;
+  }
+  .our-blog{
+    padding: 20px;
+  }
+  .blog img:first{
+    width: 100%;
+  }
+  footer{
+    padding: 25px;
+    gap: 10px;
+  }
+  .footer-lists{
+    gap: 35px;
+  }
+
+}
+
+
+/* 1130px */
+
+@media screen and (max-width: 1120px) {
+  .connect{
+    gap: 0;
+    padding: 20px;
+  }
+  .connected-customer{
+    padding: 15px;
+  }
+  .connected-customer-text{
+    gap: 20px;
+  }
+  .connected-customer-img img{
+    width: 100%;
+  }
+}
+
+
+/* 492px */
+
+@media screen and (max-width:492px) {
+  .connect-img{
+    width: 100%;
+  }
+  .line1{
+    width: 100%;
   }
 }
