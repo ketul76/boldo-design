@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ContactUs() {
+function ContactUs({contactUsDatas}) {
   return (
     <>
       <section className="contact-us">
-      <h1>An enterprise template to ramp <br/> up your company website</h1>
+      <h1>{contactUsDatas.title1} <br/> {contactUsDatas.title2}</h1>
       <div className="contact-form">
         <input type="email" placeholder="Your email address" />
-        <button>Start Now</button>
+        <button>{contactUsDatas.btn}</button>
       </div>
     </section>
     </>

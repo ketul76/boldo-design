@@ -1,42 +1,28 @@
 import React from 'react'
 
-function Blogs() {
+function Blogs({blogsData}) {
   return (
     <>
       <section className="our-blog">
-      <h1>Our Blog</h1>
-      <h2>Value proposition accelerator product <br /> management venture</h2>
-      <div className="blogs">
-        <div className="blog">
-          <img src="./images/blog-1.png" alt="" />
-          <h3>Category <span>November 22, 2021</span></h3>
-          <p>Pitch termsheet backing <br /> validation focus release.</p>
-          <div className="blog-writer">
-            <img src="./images/blog-profile-1.png" alt="" />
-            <h4>Chandler Bing</h4>
-          </div>
+      <h1>{blogsData.title}</h1>
+      <h2>{blogsData.blogInfo1} <br /> {blogsData.blogInfo2}</h2>
+      <div className="blogs">     
+        {blogsData.blogsLists.map((i) => (
+        <div className={i.class} >
+            <img src={i.blogLink} alt="img"/>
+            <h3>{i.category} <span> {i.time}</span></h3>
+            <p>{i.intro1} <br /> {i.intro2} <br />  {i.intro3}</p>
+            <div className="blog-writer">
+              <img src={i.profileImg} alt="" />
+              <h4>{i.profileName}</h4>
+            </div>
         </div>
-        <div className="blog">
-          <img src="./images/blog-2.png" alt="" />
-          <h3>Category <span>November 22, 2021</span></h3>
-          <p>Seed round direct mailing non- <br /> disclosure agreement graphical <br /> user interface rockstar.</p>
-          <div className="blog-writer">
-            <img src="./images/blog-profile-2.png" alt="" />
-            <h4>Rachel Green</h4>
-          </div>
-        </div>
-        <div className="blog">
-          <img src="./images/blog-3.png" alt="" />
-          <h3>Category <span>November 22, 2021</span></h3>
-          <p>Beta prototype sales iPad gen-z <br /> marketing network effects value <br /> proposition</p>
-          <div className="blog-writer">
-            <img src="./images/blog-profile-3.png" alt="" />
-            <h4>Monica Geller</h4>
-          </div>
-        </div>
+        ))}
       </div>
+
+      
       <div className="load-more-btn">
-        <button>Load More</button>
+        <button>{blogsData.blogBtn}</button>
       </div>
     </section>
     </>

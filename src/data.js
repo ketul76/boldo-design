@@ -62,7 +62,44 @@ const data = {
     list: [
       {class: "more",name:"We connect our customers with the best?",imgLink:"./images/down-arrow.png"},
       {class: "more",name:"Android research & development rockstar? ",imgLink:"./images/down-arrow.png"}
-    ]    
+    ],    
+  },
+  blogs : {
+    title: "Our Blog",
+    blogInfo1: "Value proposition accelerator product",
+    blogInfo2: "management venture",
+    blogsLists: [
+      {class:"blog",blogLink:"./images/blog-1.png",category:"Category",time:"November 22, 2021",intro1:"Pitch termsheet backing",intro2:"validation focus release.",profileImg:"./images/blog-profile-1.png",profileName:"Chandler Bing"},
+      {class:"blog",blogLink:"./images/blog-2.png",category:"Category",time:"November 22, 2021",intro1:"Seed round direct mailing non-",intro2:" disclosure agreement graphical",intro3:" disclosure agreement graphical",profileImg:"./images/blog-profile-2.png",profileName:"Rachel Green"},
+      {class:"blog",blogLink:"./images/blog-3.png",category:"Category",time:"November 22, 2021",intro1:"Beta prototype sales iPad gen-z ",intro2:" marketing network effects value",intro3:"proposition",profileImg:"./images/blog-profile-3.png",profileName:"Monica Geller"},
+    ],
+    blogBtn :"Load More",
+  },
+  contactUs: {
+    title1:"An enterprise template to ramp",
+    title2:"up your company website",
+    btn: "Start Now",
+  },
+  footer: {
+    logoName: "Boldo",
+    footerIntro1: "Social media validation business model",
+    footerIntro2: "canvas graphical user interface launch",
+    footerIntro3: "party creative facebook iPad twitter.",
+    rights: "All rights reserved.",
+    landing: "Landings",
+    landing1:"Home",
+    landing2:"Products",
+    landing3:"Services",
+    company : "Company",
+    company1: "Home",
+    company2: "Carrers",
+    btn: "Hiring",
+    company3: "Services",
+    resources: "Resources",
+    res1: "Blog",
+    res2: "Products",
+    res3: "Services",
+
   }
 }
 

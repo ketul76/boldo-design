@@ -21,9 +21,9 @@ function Layout() {
       <ConnectTwo connectTwoData = {data.connectTwo} />
       <Customer  customersData = {data.customer}/>
       <ConnectedCustomer connectedCustomersData = {data.connectedCustomer} />
-      <Blogs />
-      <ContactUs />
-      <Footer />
+      <Blogs  blogsData = {data.blogs}/>
+      <ContactUs contactUsDatas = {data.contactUs} />
+      <Footer footerData = {data.footer} />
     </> 
 )
 }
