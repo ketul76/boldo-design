@@ -1,25 +1,19 @@
 import React from 'react'
 
-function ConnectOne() {
+function ConnectOne({connectOneData}) {
   return (
     <>
     <section className="connect">
         <img className="connect-img" src="./images/connect-main.png" alt="" />
         <div className="connect-text">
-          <h3>We connect our customers <br /> with the best, and help them <br/> keep up-and stay open.</h3>
-          <div className="connect-list">
-            <img src="./images/truemark.png" alt="" />
-            <h5>We connect our customers with the best.</h5>
-          </div>
-          <div className="connect-list">
-            <img src="./images/truemark.png" alt="" />
-            <h5>Advisor success customer launch party.</h5>
-          </div>
-          <div className="connect-list">
-            <img src="./images/truemark.png" alt="" />
-            <h5>Business-to-consumer long tail.</h5>
-          </div>
-          <button>Start now</button>
+          <h3>{connectOneData.connectTitle1} <br /> {connectOneData.connectTitle2} <br/> {connectOneData.connectTitle3}</h3>
+          {connectOneData.connectList.map((i) => (
+            <div className={i.class}>
+            <img src={i.imgList} alt="img" />
+            <h5>{i.listName}</h5>
+          </div>  
+          ))}
+          <button>{connectOneData.connectBtn}</button>
         </div>
       </section>
     </>

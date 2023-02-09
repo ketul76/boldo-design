@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Home() {
+function Home({homeData}) {
   return (
     <>
        <section className="home">
         <div className="home-text">
-          <h3>Save time by building <br/> fast with Boldo Template </h3>
-          <p>Funding handshake buyer business-to-business metrics iPad partnership. <br/> First mover advantage innovator success deployment non-disclosure.</p>
+          <h3>{homeData.homeTitle1} <br/> {homeData.homeTitle2} </h3>
+          <p>{homeData.homeParagraph1} <br/> {homeData.homeParagraph2}</p>
           <div className="home-btns">
-            <button>Buy template</button>
-            <button>Explore</button>
+            <button>{homeData.homeBtn1}</button>
+            <button>{homeData.homeBtn2}</button>
           </div>
         </div>
         <div className="home-img">

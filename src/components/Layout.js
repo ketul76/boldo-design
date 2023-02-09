@@ -9,17 +9,18 @@ import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
 import Service from './Service';
+import data from '../data';
 
 function Layout() {
   return (
     <>
-      <Header />
-      <Home />
-      <Service />
-      <ConnectOne />
-      <ConnectTwo />
-      <Customer />
-      <ConnectedCustomer />
+      <Header headerData = {data.header} />
+      <Home  homeData= {data.home}/>
+      <Service servicesData = {data.services} />
+      <ConnectOne connectOneData = {data.connectOne} />
+      <ConnectTwo connectTwoData = {data.connectTwo} />
+      <Customer  customersData = {data.customer}/>
+      <ConnectedCustomer connectedCustomersData = {data.connectedCustomer} />
       <Blogs />
       <ContactUs />
       <Footer />

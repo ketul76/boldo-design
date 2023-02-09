@@ -1,19 +1,19 @@
 import React from 'react'
 
-function Header() {
+function Header({headerData}) {
   return (
     <>
       <header>
       <div className="logo">
         <img src="./images/home-logo.png" alt="" />
-        <h1>Boldo</h1>
+        <h1>{headerData.name}</h1>
       </div>
       <nav>
         <ul>
-          <li>Product</li>
-          <li>Services</li>
-          <li>About</li>
-          <button>Log In</button>
+          <li>{headerData.navList1}</li>
+          <li>{headerData.navList2}</li>
+          <li>{headerData.navList3}</li>
+          <button>{headerData.headerBtn}</button>
         </ul>
       </nav>
     </header>
